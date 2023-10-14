@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Unity WebGL Player | Bitverse</title>
+    <link rel="shortcut icon" href="favicon.ico">
+  </head>
+  <body style="background-color: black;">
+    <canvas id="unity-canvas"></canvas>
+
+    <style>
+      #unity-canvas {
+        width: 100vw; 
+        height: 56.25vw; /* height:width ratio = 9/16 = .5625  */
+        max-height: 100vh;
+        max-width: 177.78vh; /* 16/9 = 1.778 */
+        margin: auto;
+        position: absolute;
+        top:0;bottom:0; /* vertical center */
+        left:0;right:0; /* horizontal center */
+      }
+    </style>
+
+    <script>
+      var canvas = document.querySelector("#unity-canvas");
+
+      var buildUrl = "Build";
+      var loaderUrl = buildUrl + "/Bitverse.loader.js";
+      var config = {
+        dataUrl: buildUrl + "/Bitverse.data",
+        frameworkUrl: buildUrl + "/Bitverse.framework.js",
+        codeUrl: buildUrl + "/Bitverse.wasm",
+        streamingAssetsUrl: "StreamingAssets",
+        companyName: "Foxxi",
+        productName: "Bitverse",
+        productVersion: "0.1",
+      };
+
+      var script = document.createElement("script");
+      script.src = loaderUrl;
+      script.onload = () => {
+        createUnityInstance(canvas, config)
+        .then((unityInstance) => {
+          window.unityInstance = unityInstance;
+        }).catch((message) => {
+          alert(message);
+        });
+      };
+      document.body.appendChild(script);
+    </script>
+  </body>
+</html>

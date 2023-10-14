@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/static/css/main.5e5e2b54.css",
+    "main.js": "/static/js/main.61ad52d2.js",
+    "static/js/855.81eb0762.chunk.js": "/static/js/855.81eb0762.chunk.js",
+    "static/media/upper_lg_2.png": "/static/media/upper_lg_2.674544db869264097d51.png",
+    "static/media/Vector.png": "/static/media/Vector.21a42d3c1a8507a5fe5e.png",
+    "static/media/card.png": "/static/media/card.6552286013169cc6f028.png",
+    "static/media/XverseWallet.png": "/static/media/XverseWallet.cbb1cbb48b527f273e9a.png",
+    "static/media/Ellipse.png": "/static/media/Ellipse.9df826d997b653baac63.png",
+    "static/media/hero.png": "/static/media/hero.a4954d5bb7ccdd267b46.png",
+    "static/media/pngimg1.png": "/static/media/pngimg1.f9946811406d302e7a81.png",
+    "static/media/Vector14.png": "/static/media/Vector14.74730b26b804576582b0.png",
+    "static/media/metamask.svg": "/static/media/metamask.09e5f554ca7f2e9f93b4d3c237976b65.svg",
+    "static/media/walletconnect.svg": "/static/media/walletconnect.a4166a89e44f223aee034139e12106c8.svg",
+    "index.html": "/index.html"
+  },
+  "entrypoints": [
+    "static/css/main.5e5e2b54.css",
+    "static/js/main.61ad52d2.js"
+  ]
+}
